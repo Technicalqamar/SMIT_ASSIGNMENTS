@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+      <div class="container header-container">
+        <!-- Left: Logo / Heading -->
+        <div class="logo">
+          <h1>My Portfolio</h1>
+        </div>
+
+        <!-- Center: Navigation Links -->
+        <nav class="nav">
+          <ul class="nav-links">
+            <li><a href="./Html_Assignments/html.html">HTML</a></li>
+            <li><a href="./CSS_Assignment/css.html">CSS</a></li>
+            <li><a href="./JS_Assignment/js.html">JavaScript</a></li>
+          </ul>
+        </nav>
+
+        <!-- Right: Hamburger Icon -->
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <!-- Mobile Menu (hidden by default) -->
+      <div class="mobile-menu">
+        <ul>
+          <li><a href="./Html_Assignments/html.html">HTML</a></li>
+            <li><a href="./CSS_Assignment/css.html">CSS</a></li>
+          <li><a href="./JS_Assignment/js.html">JavaScript</a></li>
+        </ul>
+      </div>
+    </header>
+
+           <!-- ===== MAIN CONTENT ===== -->
+    <main>                                 <!-- Start of main content -->
+      <!-- Cards Section -->
+      <section class="cards-section">      <!--ye section cards ka hai -->
+        <div class="container">            <!--ye div container hai cards ka -->
+          <div class="cards-wrapper">      <!-- star of cards-wrapper --> 
+            <!-- HTML Card -->
+            <div class="card" id="html-card" data-card="html">
+              <div class="card-image">
+                <img src="./images/html-frent-img.avif" alt="HTML Card" />
+              </div>
+
+              <div class="card-content">
+                <h2>HTML</h2>
+
+                <div class="card-buttons">
+                 <a href="./Html_Assignments/html.html"> <button type="button">Go to View</button></a>
+                  <!-- <button type="button">Live Demo</button> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- CSS Card -->
+            <div class="card" id="css-card" data-card="css">
+              <div class="card-image">
+                <img src="./images/css-frent-img.jpg" alt="CSS Card" />
+              </div>
+
+              <div class="card-content">
+                <h2>CSS</h2>
+
+                <div class="card-buttons">
+                 <a href="./CSS_Assignment/css.html"> <button type="button">Go to View</button></a>
+                  <!-- <button type="button">Live Demo</button> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- JavaScript Card -->
+            <div class="card" id="js-card" data-card="javascript">
+              <div class="card-image">
+                <img src="./images/js-frent-mmg.avif" alt="JavaScript Card" />
+              </div>
+
+              <div class="card-content">
+                <h2>JavaScript</h2>
+
+                <div class="card-buttons">
+                 <a href="./JS_Assignment/js.html"> <button type="button">Got to View</button></a>
+                  <!-- <button type="button">Live Demo</button> -->
+                </div>
+              </div>
+            </div>
+
+
+
+           
+          </div>                <!-- End of cards-wrapper --> <!--is div ke andar mery cards hain -->
+        </div>                  <!-- End of container --> <!--ye div container hai cards ka -->
+      </section>                <!-- End of cards-section --> <!--ye section cards ka hai -->
+    </main>                     <!-- End of main content --> <!--ye main content ka end hai -->
+    <script src="./main.js"></script>
+  </body>
+  
+</html>

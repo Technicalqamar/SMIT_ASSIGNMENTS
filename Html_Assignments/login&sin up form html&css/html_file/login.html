@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css_file/login.css" />
+  </head>
+  <body>
+    <div class="contener">
+      <div class="contener-child">
+        <h1><u>Login</u></h1>
+        <form action="">
+            <!-- <label for="Email">Email</label> -->
+        <input class="input-s"
+          type="email"
+          required
+          placeholder="Enter Your email"
+          id="Email"
+          pattern="[a-z0-9._%+\\-]+@[a-z0-9.\\-]+\\.[a-z]{2,}$"
+          title="Please enter a valid email address (e.g., user@example.com)"
+        />
+        <br/>
+        <br/>
+
+        <!-- <label for="password">Password</label> -->
+        <input class="input-s-b"
+          type="password"
+          required
+          placeholder="Enter Your password"
+          id="password"
+          pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*_=+-]).{8,16}$"
+          title="Password must contain at least one number, one lowercase letter, one uppercase letter, one special character, and be 8-16 characters long."
+        />
+        <br/>
+        <br/>
+
+        <button type="submit" value="Login" class="login-btn">Login</button>
+
+        
+
+        </form>
+
+        <span class="span-p">Don't have an Account <a href="./signup.html" target="_blank">Signup</a></span>
+         <div class="divider">
+            <span class="or">Or</span>
+         </div>
+
+         
+         <a href="https://www.faceboke.com">
+          <div class="social-login">
+            <button class="facebook-btn">
+            <img src="/assets/images/faceboke.png" alt="Facebook logo" class="fb-img">
+             Login with facebook
+
+            </button>
+            
+          </div>
+         </a>
+
+            
+         <a href="https://www.google.com" target="_blank">
+          <div class="social-login">
+            <button class="google-btn">
+            <img src="/assets/images/download.jpg" alt="google logo" class="google-img">
+             Login with google
+
+            </button>
+            
+          </div>
+         </a>
+        
+
+   
+        
+        
+      </div>
+    </div>
+  </body>
+</html>

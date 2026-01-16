@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="calculator">
+
+    <!-- Expression Screen -->
+    <input type="text" id="expression" >
+
+    <!-- Result Screen -->
+    <input type="text" id="result" disabled>
+
+    
+    <div class="buttons">
+      <button onClick="clearAll()">C</button>
+      <button onClick="del()">DEL</button>
+      <button onClick="press('/')">÷</button>
+      <button onClick="press('*')">×</button>
+      <button onClick="press('7')">7</button>
+      <button onClick="press('8')">8</button>
+      <button onClick="press('9')">9</button>
+      <button onClick="press('-')">−</button>
+      <button onClick="press('4')">4</button>
+      <button onClick="press('5')">5</button>
+      <button onClick="press('6')">6</button>
+      <button onClick="press('+')">+</button>
+      <button onClick="press('1')">1</button>
+      <button onClick="press('2')">2</button>
+      <button onClick="press('3')">3</button>
+      <button onClick="press('%')">%</button>
+      <button class="zero" onClick="append('0')">0</button>
+      <button class="zero" onClick="append('00')">00</button>
+      <button onClick="append('.')">.</button>
+      <button class="equal" onClick="calculate()">=</button>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

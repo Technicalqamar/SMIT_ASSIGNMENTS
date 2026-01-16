@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+    }
+    #hh{
+        display: flex;
+        justify-content: center;
+    }
+</style>
+<body>
+    <h1><ins>Mega Mart</ins></h1>
+    <a href="./index.html" id="hh">Go To Home</a>
+    <hr>
+    <h3>Your compelete shoopping destination</h3>
+    <ul>
+        <li><a href="#"></a>Home</li>
+        <li><a href="#"></a>Electronics</li>
+        <li><a href="#"></a>Fashion</li>
+        <li><a href="#"></a>Books</li>
+        <li><a href="#"></a>Cart</li>
+        <li><a href="#"></a>Contact</li>
+    </ul>
+    <h3>Product Search</h3>
+    <input type="text"placeholder="search over 10,000">
+    <button>Search</button>
+    <br>
+    <br>
+    <strong>Featured Products</strong>
+    <table border="1" cellpadding="10" cellspacing="0">
+  <caption>Featured products</caption>
+  <br>
+  <tr>
+    <th>products</th>
+    <th>Today's Special Offers</th>
+    <th>price</th>
+    <th>Stock</th>
+    <th>Action</th>    
+  </tr>
+  <tr>
+    <td rowspan="2">
+        <img src="c:\Users\user\Downloads\headphone.jpeg" alt="Wireless Hedphones" width="100"><br>
+        wireless Headdphones
+    </td>
+    <td>
+      Premium noise-canceling Bluetooth headphones<br>
+      - 40mm drivers<br>
+      - 20-hour battery<br>
+      - TWS support
+    </td>
+    <td>$129.99</td>
+    <td>In Stock</td>
+    <td>
+      <button>Add to Cart</button><br>
+      Available quantity: 10
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4"></td>
+  </tr>
+  <tr>
+    <td rowspan="2">
+      <img src="smartwatch.jpeg" alt="Smart Watch Pro" width="100"><br>
+      Smart Watch Pro
+    </td>
+    <td>
+      Advanced fitness tracking smartwatch<br>
+      - GPS enabled<br>
+      - Water resistant
+    </td>
+    <td>$89.99</td>
+    <td>Low Stock</td>
+    <td>
+      <button>Add to Cart</button>
+    </td>
+  </tr>
+    </tr>
+</table>
+
+<h3>
+    
+</h3>
+
+    <div class="form-section">
+        <h3>Personal Information</h3>
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name"><br>
+
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name"><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob"><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+    </div>
+
+    <div class="form-section">
+        <h3>Account Details</h3>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone"><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br>
+
+        <label for="newsletter">Subscribe to Newsletter:</label>
+        <input type="checkbox" id="newsletter" name="newsletter"><br>
+    </div>
+
+     <div class="form-section">
+        <h3>Shipping Address</h3>
+        <label for="address">Street Address:</label>
+        <input type="text" id="address" name="address"><br>
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country"><br>
+
+        <label for="zip">ZIP Code:</label>
+        <input type="text" id="zip" name="zip"><br>
+
+        <button type="button">Create Account</button>
+        <button type="button">Clear Form</button>
+    </div>
+
+     <h3>Product Comparison</h3>
+    <table>
+        <tr>
+            <th>Feature</th>
+            <th>Basic Model</th>
+            <th>Pro Model</th>
+            <th>Premium Model</th>
+        </tr>
+        <tr>
+            <td>Battery Life</td>
+            <td>8 hours</td>
+            <td>12 hours</td>
+            <td>24 hours</td>
+        </tr>
+        <tr>
+            <td>Water Resistance</td>
+            <td>IPX4</td>
+            <td>IPX7</td>
+            <td>IP68</td>
+        </tr>
+          <tr>
+            <td>Warranty</td>
+            <td>1 year</td>
+            <td>2 years</td>
+            <td>2 years</td>
+        </tr>
+    </table>
+    <p><em>* All prices include VAT</em></p>
+
+    <h3>Checkout Process</h3>
+    <div>
+        <h3>Payment Information</h3>
+        <label for="card_type">Card Type:</label>
+        <select id="card_type" name="card_type">
+            <option value="visa">Visa</option>
+            <option value="mastercard">MasterCard</option>
+            <option value="amex">American Express</option>
+        </select><br>
+        
+        <label for="expiry_date">Expiry Date:</label>
+        <input type="date" id="expiry_date" name="expiry_date"><br>
+
+        <label for="card_number">Card Number:</label>
+        <input type="text" id="card_number" name="card_number"><br>
+    </div>
+
+    <div>
+        <h3>Order Summary</h3>
+        <table>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Wireless Headphones</td>
+                <td>1</td>
+                <td>$299.98</td>
+            </tr>
+            <tr>
+                <td>Shipping</td>
+                <td></td>
+                <td>$15.00</td>
+            </tr>
+                   <tr>
+                <td>Total:</td>
+                <td></td>
+                <td>$314.98</td>
+            </tr>
+        </table>
+        <button type="button">Complete Purchase</button>
+    </div>
+
+ <h2>Product Video</h2>
+    <video width="600" height="400" controls>
+        <source src="Big Buck Bunny - FULL HD 60FPS - Trim.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <h2>Product Audio Description</h2>
+    <audio controls>
+        <source src="path_to_audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+        <p>Email: <a href="mailto:ahmedazizkhan405@gmail.com">support@megmart.com</a></p>
+        <p>Phone: <a href="tel:+0320-6633975">+1 (123) 456-7890</a></p>
+        <p>Address: 123 Commerce Street, New York, NY 10001</p>
+    </div>
+
+    <div class="map">
+        <h3>Here is our location</h3>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1811224287753!2d-122.41941528468158!3d37.77492927975941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c290b2e49%3A0x4ca80ad8f46369a3!2sSaylani%20Job%20Bank!5e0!3m2!1sen!2sus!4v1631234782714!5m2!1sen!2sus"
+            width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+ <h2>Checkout the latest video</h2>
+
+<iframe width="1300" height="703" src="https://www.youtube.com/embed/M_kuSSAqgs0" title="To-Do App using JavaScript - Part 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h3>Quick Links</h3>
+    <ul>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Return Policy</a></li>
+    </ul>
+    <footer>
+        © 2023 MegaMart. All rights reserved.
+    </footer>
+
+</body>
+</html>
+
+    
+
+
+    
+
+
+
