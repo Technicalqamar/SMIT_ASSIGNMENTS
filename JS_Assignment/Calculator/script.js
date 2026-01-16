@@ -1,5 +1,5 @@
-let expression = document.getElementById("expression");
-let result = document.getElementById("result");
+var expression = document.getElementById("expression");
+var result = document.getElementById("result");
 
 function press(value) {
 
@@ -24,9 +24,6 @@ function del(){
 function calculate(){
     result.value = eval(expression.value);
 
-    
-
-      // result.value = "Error";
-
+  
 }
 

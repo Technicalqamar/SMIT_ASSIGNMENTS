@@ -9,11 +9,9 @@
 
   <div class="calculator">
 
-    <!-- Expression Screen -->
-    <input type="text" id="expression" >
+    <input type="text" id="expression"  >
 
-    <!-- Result Screen -->
-    <input type="text" id="result" disabled>
+    <input type="text" id="result" >
 
     
     <div class="buttons">
@@ -33,9 +31,9 @@
       <button onClick="press('2')">2</button>
       <button onClick="press('3')">3</button>
       <button onClick="press('%')">%</button>
-      <button class="zero" onClick="append('0')">0</button>
-      <button class="zero" onClick="append('00')">00</button>
-      <button onClick="append('.')">.</button>
+      <button class="zero" onClick="press('0')">0</button>
+      <button class="zero" onClick="press('00')">00</button>
+      <button onClick="press('.')">.</button>
       <button class="equal" onClick="calculate()">=</button>
 
     </div>
