@@ -1,3 +1,4 @@
+
 var expression = document.getElementById("expression");
 var result = document.getElementById("result");
 
@@ -12,18 +13,16 @@ function clearAll(){
    return;
   }
 
-
+  
 function del(){
   expression.value = expression.value.slice(0, -1);
-   
-
-
+  
 }
 
 
 function calculate(){
     result.value = eval(expression.value);
-
-  
+ 
 }
+
 

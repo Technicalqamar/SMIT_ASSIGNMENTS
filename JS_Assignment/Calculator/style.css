@@ -63,7 +63,18 @@ button {
 button:hover {
   background: #c0ae75;
 }
-
+.DEL{
+  background-color: red;
+}
+.clear{
+  background-color: cadetblue;
+}
+.DEL:hover{
+  background-color: crimson;
+}
+.clear:hover{
+  background-color: darkgrey;
+}
 .equal {
   grid-row: span 1;
   background: #ff9800;

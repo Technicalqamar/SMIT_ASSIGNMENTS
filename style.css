@@ -8,6 +8,8 @@
 
 body{
   background-color: #373b442a;
+    background-image: url(./images/img-1.jpg);
+
 } 
 
 /* ===== Common Container ===== */
@@ -171,6 +173,7 @@ background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, F
 /* ===== Cards Section ===== */
 .cards-section {
   padding: 60px 0;
+  /* background-image: url(./images/img-1.jpg); */
   /* background-color: #e6ecf5; */
   margin: 50px;
   /* width: 1200px; */

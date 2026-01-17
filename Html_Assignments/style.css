@@ -268,3 +268,8 @@ transition: all 0.5s;
 .mobile-menu.active {
   display: block;
 }
+@media (max-width: 405px) {
+  .card{
+    margin-right: 20px;
+  }
+}

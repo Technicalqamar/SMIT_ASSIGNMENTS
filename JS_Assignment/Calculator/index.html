@@ -7,7 +7,7 @@
 </head>
 <body>
 
-  <div class="calculator">
+  <div class="calculator" >
 
     <input type="text" id="expression" disabled  >
 
@@ -15,8 +15,8 @@
 
     
     <div class="buttons">
-      <button onClick="clearAll()">C</button>
-      <button onClick="del()">DEL</button>
+      <button onClick="clearAll()" class="clear">C</button>
+      <button onClick="del()" class="DEL">DEL</button>
       <button onClick="press('/')">÷</button>
       <button onClick="press('*')">×</button>
       <button onClick="press('7')">7</button>
@@ -40,6 +40,6 @@
 
   </div>
 
-  <script src="script.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>

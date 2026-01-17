@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.parent{
+    height:100%;
+    width: 100%;
+    background-color: hsl(239, 49%, 44%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+
+}
+
+.palette{
+    margin: 10px;
+    background-color:white;
+    height: 260px;
+    width: 25%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 8px;
+    display: flex;
+     justify-content: center;
+     position: relative;
+
+
+}
+
+
+.box{
+    height: 225px;
+    width:98%;
+    
+    background-image: url(./assets/snap2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+
+}
+span{
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    font-weight: bold;
+}
+b{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+a{
+    color: black;
+}
+
+.img-1{
+    
+    background-image: url(../assets/snap1.png);
+    }
+
+    
+.img-2{
+    
+    background-image: url(../assets/snap2.png);
+    }
+
+    
+.img-3{
+    
+    background-image: url(../assets/snap3.png);
+    }
+
+    
+.img-4{
+    
+    background-image: url(../assets/snap4.png);
+    }
+
+    
+.img-5{
+    
+    background-image: url(../assets/snap5.png);
+    }
+
+    
+.img-6{
+    
+    background-image: url(../assets/snap6.png);
+    }
+
+
+/* Media qur */
+
+
+
+    @media (max-width:630px) {
+        b{
+                   
+        display: none;   
+        
+        }
+        span{
+            font-size: 15px;
+        }
+        
+    }
+    @media (max-width:600px) {
+        .parent{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+
+        }
+         .palette{
+            width: 95%;
+            height: auto;
+        }
+        span{
+            font-size: 30px;
+            margin-left: 10px;
+            
+        }
+        b{
+            display: block;
+            font-size: 30px;
+            margin-right: 10px;
+        }
+     
+    }
+
+    @media (max-width:590px) { 
+        .box{
+            height: 380px;
+        }
+        .palette{
+            height: 430px;
+            border-radius: 12px;
+        }
+
+    }
+    
+
+
+
+
+
+
