@@ -46,3 +46,22 @@ window.addEventListener('scroll', function() {
   }
 });
 
+// images array
+var images = [
+  "images/img-1.jpg",
+  "images/img-2.jpg",
+  "images/img-3.jpg",
+  "images/img-4.jpg",
+  "images/img-5.jpg",
+  "images/img-6.jpg"
+
+];
+
+// random number generate
+var randomIndex = Math.floor(Math.random() * images.length);
+
+// select container
+var container = document.getElementById("main-div");
+
+// set background image
+container.style.backgroundImage = `url(${images[randomIndex]})`;
