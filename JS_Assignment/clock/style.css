@@ -94,10 +94,14 @@ body{
     color:white;
     font-weight:bold;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size:14px;
+    font-size:12px;
     border-color:burlywood;
 }
-
+.months-h2{
+    font-size: 28px;
+    margin: 0;
+    
+}
 
 .hours{ border-color:#ff4757; }
 .minutes{ border-color:#ffa502; }
@@ -129,7 +133,7 @@ body{
     }
 }
 
-@media(max-width:480px){
+@media(max-width:547px){
     .circle{
         width:100px;
         height:100px;
@@ -140,8 +144,12 @@ body{
         font-size:14px;
         /* margin-left: 30px; */
     }
+   
     .row{
         flex-direction: column;
         align-items: center;
+    }
+    .months-h2{
+        font-size: 22px;
     }
 }
