@@ -1,0 +1,122 @@
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:15px;
+}
+
+.game{
+    width:100%;
+    max-width:500px;
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.2);
+    text-align:center;
+}
+
+.score,.wrong{
+    font-size:18px;
+    margin-bottom:10px;
+}
+
+.target{
+
+    display:flex;
+justify-content:center;
+align-items:center;
+font-size:30px;
+background:#eee;
+
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    margin:15px auto 25px;
+    border:3px solid #333;
+}
+/* 
+.board{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:12px;
+    justify-items:center;
+} */
+
+/* 
+.s_circles{
+    width:100%;
+    aspect-ratio:1/1;
+    border-radius:50%;
+    cursor:pointer;
+    transition:0.3s;
+} */
+
+.s_circles:hover{
+    transform:scale(1.08);
+}
+
+.board {
+    display:grid;
+    grid-template-columns:repeat(5, 1fr);
+    gap:12px;
+    justify-items:center;
+}
+
+/* Font size for emojis */
+.s_circles {
+    width:100%;
+    aspect-ratio:1/1;
+    border-radius:50%;
+    cursor:pointer;
+    transition:0.3s;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f9f9f9;
+}
+
+/* Responsive font size */
+@media (max-width: 480px) {
+    .s_circles {
+        font-size:20px;
+    }
+
+    .target {
+        width:60px;
+        height:60px;
+        font-size:24px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .s_circles {
+        font-size:24px;
+    }
+
+    .target {
+        width:70px;
+        height:70px;
+        font-size:28px;
+    }
+}
+
+@media (min-width: 769px) {
+    .s_circles {
+        font-size:28px;
+    }
+
+    .target {
+        width:80px;
+        height:80px;
+        font-size:32px;
+    }
+}
