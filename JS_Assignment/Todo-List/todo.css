@@ -55,7 +55,9 @@ button {
 #updateBtn:active,
 #addBtn:active,
 .editBtn:active,
-.deleteBtn:active {
+.deleteBtn:active,
+.doneBtn:active,
+.undoBtn:active {
   animation: clickEffect 0.3s ease;
 }
 
@@ -65,7 +67,6 @@ button {
   100% { transform: scale(1); }
 }
 
-/* ==== LIST FIX ==== */
 
 li{
     background: #f1f1f1;
@@ -79,13 +80,17 @@ li{
     gap: 10px;
 }
 
-/* text wrap fix */
 .todo-text{
     flex: 1;
     word-break: break-word;
 }
+.completed {
+    background-color: #d4edda;
+}
+.done{
+    text-decoration: line-through;
+}
 
-/* buttons group fix */
 .btn-group{
     display: flex;
     gap: 5px;
@@ -98,7 +103,7 @@ li span{
 }
 
 .editBtn {
-    background: blue;
+    background-color: blue;
     transition: all 0.3s ease;
 }
 
@@ -108,13 +113,36 @@ li span{
 }
 
 .deleteBtn {
-    background: red;
+    background-color: red;
     transition: all 0.3s ease;
 }
+
 
 .deleteBtn:hover{
   background-color: brown;
   transform: scale(1.1);
+}
+
+.doneBtn{
+    background-color: rgb(148, 210, 26);
+    transition: all 0.3s ease;
+
+}
+.doneBtn:hover{
+    background-color: rgb(202, 148, 9);
+      transform: scale(1.1);
+
+}
+.undoBtn{
+    background-color: rgb(21, 196, 212);
+    transition: all 0.3s ease;
+
+}
+
+.undoBtn:hover{
+    background-color: rgb(5, 105, 89);
+      transform: scale(1.1);
+
 }
 
 @media (max-width: 480px){

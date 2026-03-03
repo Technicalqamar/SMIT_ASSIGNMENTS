@@ -6,6 +6,32 @@ var todoList = document.getElementById("todoList");
 var todos = [];
 var indexToBeUpdate = null;
 
+function doneTodo(id){
+
+    for(var i = 0; i < todos.length; i++){
+
+        if(todos[i].id === id){
+            todos[i].isCompleted = true;
+            break;
+        }
+    }
+     renderTodo();
+
+}
+
+function undoTodo(){
+
+    for(var i = 0; i < todos.length; i++){
+
+        if( todos[i].isCompleted == true){
+            todos[i].isCompleted = false;
+            break;
+        }
+    }
+     renderTodo();
+
+}
+
 function deleteTodo(id){
 
     for(var i=0; i<todos.length; i++){
@@ -14,7 +40,7 @@ function deleteTodo(id){
         }
     }
 
-    // اگر list empty ہو جائے
+
     if(todos.length === 0){
         addBtn.style.display = 'inline';
         updateBtn.style.display = 'none';
@@ -60,10 +86,11 @@ function addTodo(){
         id: (new Date().getTime()) + Math.floor(Math.random() * 999),
         text: todoInput.value,
         createdAt: new Date(),
+        isCompleted: false,
     }
 
     todos.push(todoObj)
-    todoInput.value = ' '
+    todoInput.value = ''
     renderTodo();
 }
 
@@ -74,7 +101,26 @@ function renderTodo(){
 
         var li = document.createElement("li")
 
-        li.innerHTML = `
+        if(todos[i].isCompleted == true){
+            li.classList.add("completed");
+        }
+
+       if(todos[i].isCompleted === true){
+
+         li.innerHTML = `
+        <div class="todo-text done">${todos[i].text}</div>
+
+        <div class="btn-group">
+            <span>${todos[i].createdAt.getDate()} - ${todos[i].createdAt.getMonth()+1} - ${todos[i].createdAt.getFullYear()}</span>
+
+            <button class="doneBtn" onclick="doneTodo(${todos[i].id})">Done</button>
+            <button class="undoBtn" onclick="undoTodo(${todos[i].id})">Undo</button>
+        </div>
+        `;
+
+       }
+       else{
+         li.innerHTML = `
         <div class="todo-text">${todos[i].text}</div>
 
         <div class="btn-group">
@@ -82,9 +128,12 @@ function renderTodo(){
 
             <button class="editBtn" onclick="editTodo(${todos[i].id})">Edit</button>
             <button class="deleteBtn" onclick="deleteTodo(${todos[i].id})">Delete</button>
+            <button class="doneBtn" onclick="doneTodo(${todos[i].id})">Done</button>
         </div>
         `;
 
-        todoList.appendChild(li);
+       }
+               todoList.appendChild(li);
+
     }
 }
