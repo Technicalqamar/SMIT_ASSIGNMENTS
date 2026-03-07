@@ -26,15 +26,17 @@ input {
 }
 
 button {
-    padding: 8px;
+    padding: 5px;
     border: none;
     cursor: pointer;
     color: white;
+    border-radius: 30px;
 }
 
 #addBtn {
     background: green;
     transition: all 0.3s ease;
+    border-radius: 5px;
 }
 
 #updateBtn {
@@ -96,6 +98,7 @@ li{
     gap: 5px;
     align-items: center;
     flex-shrink: 0;
+    align-self: flex-end;
 }
 
 li span{

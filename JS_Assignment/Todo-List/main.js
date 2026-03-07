@@ -34,12 +34,17 @@ function undoTodo(){
 
 function deleteTodo(id){
 
+    todoInput.value = '';
+
+    
+        addBtn.style.display = 'inline';
+        updateBtn.style.display = 'none';
+
     for(var i=0; i<todos.length; i++){
         if (todos[i].id == id){
             todos.splice(i,1);
         }
     }
-
 
     if(todos.length === 0){
         addBtn.style.display = 'inline';
@@ -113,8 +118,8 @@ function renderTodo(){
         <div class="btn-group">
             <span>${todos[i].createdAt.getDate()} - ${todos[i].createdAt.getMonth()+1} - ${todos[i].createdAt.getFullYear()}</span>
 
-            <button class="doneBtn" onclick="doneTodo(${todos[i].id})">Done</button>
-            <button class="undoBtn" onclick="undoTodo(${todos[i].id})">Undo</button>
+            <button class="doneBtn" onclick="doneTodo(${todos[i].id})">✔Done</button>
+            <button class="undoBtn" onclick="undoTodo(${todos[i].id})">↩Undo</button>
         </div>
         `;
 
@@ -124,11 +129,10 @@ function renderTodo(){
         <div class="todo-text">${todos[i].text}</div>
 
         <div class="btn-group">
-            <span>${todos[i].createdAt.getDate()} - ${todos[i].createdAt.getMonth()+1} - ${todos[i].createdAt.getFullYear()}</span>
-
-            <button class="editBtn" onclick="editTodo(${todos[i].id})">Edit</button>
-            <button class="deleteBtn" onclick="deleteTodo(${todos[i].id})">Delete</button>
-            <button class="doneBtn" onclick="doneTodo(${todos[i].id})">Done</button>
+            
+            <button class="editBtn" onclick="editTodo(${todos[i].id})">👁‍🗨Edit</button>
+            <button class="deleteBtn" onclick="deleteTodo(${todos[i].id})">❌Delete</button>
+            <button class="doneBtn" onclick="doneTodo(${todos[i].id})">✔Done</button>
         </div>
         `;
 
