@@ -243,4 +243,9 @@ background: linear-gradient(to right, #4286f4, #373B44);
   .card img {
     height: 200px;
   }
+  #main-div{
+    height: auto;
+  }
 }
+
+

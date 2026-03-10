@@ -131,7 +131,7 @@ function renderTodo(){
         <div class="btn-group">
             
             <button class="editBtn" onclick="editTodo(${todos[i].id})">👁‍🗨Edit</button>
-            <button class="deleteBtn" onclick="deleteTodo(${todos[i].id})">❌Delete</button>
+            <button class="deleteBtn" onclick="deleteTodo(${todos[i].id})">🗑️Delete</button>
             <button class="doneBtn" onclick="doneTodo(${todos[i].id})">✔Done</button>
         </div>
         `;
