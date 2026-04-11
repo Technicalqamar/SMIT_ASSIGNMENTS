@@ -8,7 +8,7 @@ var indexToBeUpdate = null;
 
 todoInput.addEventListener('keydown' , function(event){
     if(event.key === 'Enter'){
-        event.preventDefault;
+        event.preventDefault();
         addTodo();
     }
 })
@@ -51,29 +51,25 @@ function undoTodo(){
      renderTodo();
 
 }
-
 function deleteTodo(id){
-
-    todoInput.value = '';
-
-    
-        addBtn.style.display = 'inline';
-        updateBtn.style.display = 'none';
 
     for(var i=0; i<todos.length; i++){
         if (todos[i].id == id){
+
+            if(indexToBeUpdate === i){
+                todoInput.value = '';
+                indexToBeUpdate = null;
+
+                addBtn.style.display = 'inline';
+                updateBtn.style.display = 'none';
+            }
+
             todos.splice(i,1);
-            window.localStorage.setItem('todos', JSON.stringify(todos));
-            renderTodo();
+            break;
         }
     }
 
-    if(todos.length === 0){
-        addBtn.style.display = 'inline';
-        updateBtn.style.display = 'none';
-        todoInput.value = '';
-    }
-
+    localStorage.setItem('todos', JSON.stringify(todos));
     renderTodo();
 }
 
@@ -170,7 +166,11 @@ function renderTodo(){
 }
 
 function deleteAll(){
-    todos = [];
+    if(todos.length === 0){
+        alert('you have no todo')
+        return;
+    }
+      todos = [];
     window.localStorage.removeItem('todos');
     renderTodo();
 }
